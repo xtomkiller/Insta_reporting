@@ -32,7 +32,7 @@ def test_proxies():
             checked_proxies += 1
             if check_proxy(proxy):
                 verified_proxies += 1
-                with open('/home/hacker/Desktop/my/Insta_reporting/data/proxies.txt', 'a') as file:
+                with open('data/proxies.txt', 'a') as file:
                     file.write(proxy + '\n')
                 print(colored(f'{idx}. Proxy {proxy.ljust(20)} is working', 'green'))
             else:
